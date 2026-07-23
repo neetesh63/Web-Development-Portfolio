@@ -1954,3 +1954,165 @@ section h2::after{
 .btn:hover{
     transform:translateY(-3px);
 }
+
+/* ==========================================
+   ACHIEVEMENTS SECTION
+========================================== */
+
+#achievements{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.achievement-container{
+    position:relative;
+    max-width:900px;
+    margin:50px auto 0;
+}
+
+/* ==========================================
+   TIMELINE
+========================================== */
+
+.achievement-container::before{
+
+    content:"";
+    position:absolute;
+    left:25px;
+    top:0;
+    width:4px;
+    height:100%;
+    border-radius:10px;
+    background:linear-gradient(
+        var(--primary),
+        var(--secondary)
+    );
+
+}
+
+/* ==========================================
+   ACHIEVEMENT CARD
+========================================== */
+
+.achievement-card{
+
+    position:relative;
+    margin:0 0 30px 60px;
+    padding:25px;
+    background:rgba(17,24,39,.9);
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    transition:.35s ease;
+
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(124,58,237,.2);
+
+}
+
+/* ==========================================
+   TIMELINE DOT
+========================================== */
+
+.achievement-card::before{
+
+    content:"";
+    position:absolute;
+    left:-48px;
+    top:30px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:var(--secondary);
+    border:4px solid var(--bg-color);
+
+}
+
+/* ==========================================
+   YEAR BADGE
+========================================== */
+
+.achievement-year{
+
+    display:inline-block;
+    margin-bottom:12px;
+    padding:6px 14px;
+    border-radius:30px;
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+    color:#fff;
+    font-size:.85rem;
+    font-weight:600;
+
+}
+
+/* ==========================================
+   ACHIEVEMENT RESPONSIVE
+========================================== */
+
+@media (max-width:768px){
+
+    .achievement-container::before{
+
+        left:12px;
+
+    }
+
+    .achievement-card{
+
+        margin-left:35px;
+
+    }
+
+    .achievement-card::before{
+
+        left:-24px;
+
+    }
+
+}
+
+/* ==========================================
+   REUSABLE TILT CARD
+========================================== */
+
+.tilt-card{
+
+    transform-style:preserve-3d;
+
+    will-change:transform;
+
+}
+
+/* ==========================================
+   SECTION SPACING SYSTEM
+========================================== */
+
+section{
+    scroll-margin-top:90px;
+}
+
+section p{
+    max-width:750px;
+    margin:0 auto 20px;
+    line-height:1.8;
+}
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+a:focus-visible,
+button:focus-visible{
+
+    outline:3px solid var(--secondary);
+    outline-offset:4px;
+
+}
