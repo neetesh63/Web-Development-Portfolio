@@ -235,3 +235,81 @@ themeBtn.addEventListener("click",()=>{
     }
 
 });
+
+// ==========================================
+// PROJECT CARD INTERACTION
+// ==========================================
+
+const projectCards = document.querySelectorAll(".project-card");
+
+projectCards.forEach((card) => {
+
+    card.addEventListener("mousemove", (e) => {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+
+        const y = e.clientY - rect.top;
+
+        const rotateX = ((y / rect.height) - 0.5) * -10;
+
+        const rotateY = ((x / rect.width) - 0.5) * 10;
+
+        card.style.transform =
+        `perspective(1000px)
+        rotateX(${rotateX}deg)
+        rotateY(${rotateY}deg)
+        translateY(-10px)`;
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.style.transform =
+        "perspective(1000px) rotateX(0) rotateY(0) translateY(0)";
+
+    });
+
+});
+
+// ==========================================
+// BUTTON RIPPLE EFFECT
+// ==========================================
+
+const buttons = document.querySelectorAll(".btn");
+
+buttons.forEach((button)=>{
+
+    button.addEventListener("click",(e)=>{
+
+        const circle=document.createElement("span");
+
+        const diameter=Math.max(button.clientWidth,button.clientHeight);
+
+        const radius=diameter/2;
+
+        circle.style.width=
+        circle.style.height=`${diameter}px`;
+
+        circle.style.left=
+        `${e.clientX-button.offsetLeft-radius}px`;
+
+        circle.style.top=
+        `${e.clientY-button.offsetTop-radius}px`;
+
+        circle.classList.add("ripple");
+
+        const ripple=button.querySelector(".ripple");
+
+        if(ripple){
+
+            ripple.remove();
+
+        }
+
+        button.appendChild(circle);
+
+    });
+
+});
