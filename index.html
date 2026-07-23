@@ -9,17 +9,17 @@
 
     <!-- SEO -->
     <meta name="description"
-        content="Portfolio of Neetesh Rathore - Frontend Web Developer">
+        content="Professional Portfolio of Neetesh Rathore, Aspiring Full Stack Web Developer skilled in HTML, CSS, JavaScript, Git and Responsive Web Design.">
 
-    <meta name="keywords"
-        content="Portfolio, HTML, CSS, JavaScript, Frontend Developer">
+    <meta name="keywords" content="Portfolio, HTML, CSS, JavaScript, Full Stack Web Developer ">
 
-    <meta name="author"
-        content="Neetesh Rathore">
+    <meta name="author" content="Neetesh Rathore">
 
     <!-- Website Title -->
 
-    <title>Neetesh Rathore | Portfolio</title>
+    <title>
+        Neetesh Rathore | Full Stack Web Developer Portfolio
+    </title>
 
     <!-- CSS File -->
 
@@ -29,45 +29,49 @@
 
 <body>
 
-  <!-- ==========================
+    <!-- ==========================
         HEADER START
 =========================== -->
 
-<header>
+    <header>
 
-    <nav>
+        <nav>
 
-        <h2>Neetesh Rathore</h2>
+            <h2>Neetesh Rathore</h2>
 
-        <ul>
+            <ul>
 
-            <li>
-                <a href="#home">Home</a>
-            </li>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
 
-            <li>
-                <a href="#about">About</a>
-            </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
 
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
 
-            <li>
-                <a href="#education">Education</a>
-            </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
 
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
 
-        </ul>
+            </ul>
 
-    </nav>
+        </nav>
 
-</header>
+        <button id="themeToggle" class="theme-btn">
+            🌙
+        </button>
 
-<!-- ==========================
+    </header>
+
+    <!-- ==========================
         HEADER END
 =========================== -->
 
@@ -76,10 +80,10 @@
     =========================== -->
 
     <main>
-                <!-- ==========================
+        <!-- ==========================
                 HOME / HERO SECTION START
         =========================== -->
-
+        <!-- 
         <section id="home">
 
             <div class="hero-content">
@@ -95,21 +99,59 @@
                     responsive, and user-friendly websites
                     using HTML, CSS, and JavaScript.
                 </p>
+                <a href="#contact">
+                    <button type="button">
+                        Hire Me
+                    </button>
+                </a>
 
-                <button type="button">
-                    Hire Me
-                </button>
-
-                <button type="button">
-                    Download Resume
-                </button>
+                <a href="resume.pdf" download>
+                    <button type="button">
+                        Download Resume
+                    </button>
+                </a>
 
             </div>
 
             <div class="hero-image">
 
-                <img src="profile.jpg"
-                     alt="Neetesh Rathore Profile Picture">
+                <img src="profile.jpg" alt="Neetesh Rathore Profile Picture">
+
+            </div>
+
+        </section> -->
+
+        <section id="home">
+
+            <div class="hero-content">
+
+                <h1>
+                    Hi, I'm <span>Neetesh Rathore</span>
+                </h1>
+                <h2 class="typing-text"> </h2>
+
+                <p>
+                    Passionate BTech student and aspiring Full Stack Web Developer dedicated to building modern,
+                    responsive and user-friendly web applications.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn">
+                        Hire Me
+                    </a>
+
+                    <a href="resume.pdf" class="btn btn-outline" download>
+                        Download Resume
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="profile.jpg" alt="Neetesh Rathore">
 
             </div>
 
@@ -118,7 +160,7 @@
         <!-- ==========================
                 HOME / HERO SECTION END
         =========================== -->
-                <!-- ==========================
+        <!-- ==========================
                 ABOUT SECTION START
         =========================== -->
 
@@ -158,7 +200,7 @@
                 ABOUT SECTION END
         =========================== -->
 
-                <!-- ==========================
+        <!-- ==========================
                 SKILLS SECTION START
         =========================== -->
 
@@ -171,21 +213,53 @@
                 that I am learning and using in web development.
             </p>
 
-            <ul>
+            
+                
+               <div class="skills-container">
 
-                <li>HTML5</li>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>HTML5</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" data-width="95%"></div>
+                        </div>
+                    </div>
 
-                <li>CSS3</li>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>CSS3</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" data-width="90%"></div>
+                        </div>
+                    </div>
 
-                <li>JavaScript</li>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" data-width="80%"></div>
+                        </div>
+                    </div>
 
-                <li>Responsive Web Design</li>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>Git & GitHub</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" data-width="75%"></div>
+                        </div>
+                    </div>
 
-                <li>Git & GitHub</li>
+                </div>
 
-                <li>Visual Studio Code</li>
-
-            </ul>
+            
 
         </section>
 
@@ -193,7 +267,7 @@
                 SKILLS SECTION END
         =========================== -->
 
-                <!-- ==========================
+        <!-- ==========================
                 EDUCATION SECTION START
         =========================== -->
 
@@ -248,7 +322,185 @@
         <!-- ==========================
                 EDUCATION SECTION END
         =========================== -->
-                <!-- ==========================
+
+        <!-- ==========================================
+             PROJECTS SECTION
+========================================== -->
+
+        <section id="projects">
+
+            <h2>My Projects</h2>
+
+            <p>
+                Here are some of the projects that showcase my skills in
+                web development and problem solving.
+            </p>
+
+            <div class="projects-container">
+
+                <!-- Project 1 -->
+
+                <article class="project-card">
+
+                    <img src="https://via.placeholder.com/500x300" alt="Portfolio Website">
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A responsive portfolio website built using HTML, CSS and JavaScript.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>HTML5</span>
+
+                        <span>CSS3</span>
+
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn">
+                            Live Demo
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 2 -->
+
+                <article class="project-card">
+
+                    <img src="https://via.placeholder.com/500x300" alt="Calculator">
+
+                    <h3>Calculator App</h3>
+
+                    <p>
+                        A simple calculator built using JavaScript with responsive design.
+                    </p>
+                    <div class="project-tech">
+
+                        <span>HTML5</span>
+
+                        <span>CSS3</span>
+
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn">
+                            Live Demo
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 3 -->
+
+                <article class="project-card">
+
+                    <img src="https://via.placeholder.com/500x300" alt="Landing Page">
+
+                    <h3>Responsive Landing Page</h3>
+
+                    <p>
+                        A modern landing page with responsive layout and clean UI.
+                    </p>
+
+                    <div class="project-tech">
+
+                        <span>HTML5</span>
+
+                        <span>CSS3</span>
+
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn">
+                            Live Demo
+                        </a>
+
+                        <a href="#" class="btn btn-outline">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================================
+             RESUME SECTION
+========================================== -->
+
+        <section id="resume">
+
+            <h2>Resume</h2>
+
+            <p>
+                Download my latest resume to learn more about my education,
+                technical skills, and projects.
+            </p>
+
+            <div class="resume-container">
+
+                <div class="resume-card">
+
+                    <h3>My Resume</h3>
+
+                    <p>
+                        View or download my professional resume in PDF format.
+                    </p>
+
+                    <a href="resume.pdf" class="btn" download>
+                        📄 Download Resume
+                    </a>
+
+                </div>
+
+                <div class="resume-card">
+
+                    <h3>Quick Overview</h3>
+
+                    <ul>
+
+                        <li>🎓 B.Tech Student</li>
+
+                        <li>💻 Frontend Web Developer</li>
+
+                        <li>🌐 Responsive Web Design</li>
+
+                        <li>🚀 Learning Full Stack Development</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
                 CONTACT SECTION START
         =========================== -->
 
@@ -270,10 +522,7 @@
                 <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
 
                 <label for="message">Message</label><br>
-                <textarea id="message"
-                          name="message"
-                          rows="5"
-                          placeholder="Write your message here"></textarea><br><br>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea><br><br>
 
                 <button type="submit">
                     Send Message
@@ -293,25 +542,37 @@
             MAIN END
     =========================== -->
 
-        <!-- ==========================
+    <!-- ==========================
             FOOTER START
     =========================== -->
-
     <footer>
 
+        <h3>Neetesh Rathore</h3>
+
         <p>
-            © 2026 Neetesh Rathore. All Rights Reserved.
+            Aspiring Full Stack Web Developer
         </p>
 
         <p>
-            Built with HTML, CSS & JavaScript
+            © 2026 All Rights Reserved.
         </p>
+
 
     </footer>
+
 
     <!-- ==========================
             FOOTER END
     =========================== -->
+
+    <!-- Scroll To Top Button -->
+
+    <button id="scrollTopBtn" title="Go to Top">
+
+        ↑
+
+    </button>
+    <script src="script.js"></script>
 </body>
 
 </html>

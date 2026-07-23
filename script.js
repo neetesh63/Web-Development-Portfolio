@@ -313,3 +313,30 @@ buttons.forEach((button)=>{
     });
 
 });
+
+// ==========================================
+// SKILL BAR ANIMATION
+// ==========================================
+
+const skillBars = document.querySelectorAll(".progress-bar");
+
+const skillObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.style.width = entry.target.dataset.width;
+
+        }
+
+    });
+
+}, { threshold: 0.4 });
+
+skillBars.forEach((bar) => {
+
+    skillObserver.observe(bar);
+
+});
+
