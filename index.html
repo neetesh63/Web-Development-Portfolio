@@ -3,146 +3,203 @@
 
 <head>
 
-    <!-- Basic Meta Tags -->
+    <!-- Meta -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
-    <meta name="description"
-        content="Professional Portfolio of Neetesh Rathore, Aspiring Full Stack Web Developer skilled in HTML, CSS, JavaScript, Git and Responsive Web Design.">
+    <title>Neetesh Rathore | Software Engineer Portfolio</title>
 
-    <meta name="keywords" content="Portfolio, HTML, CSS, JavaScript, Full Stack Web Developer ">
+    <meta name="description" content="Professional Portfolio of Neetesh Rathore - Software Engineer & AI Engineer">
+
+    <meta name="keywords" content="Portfolio, Software Engineer, AI Engineer, Web Developer, HTML, CSS, JavaScript">
 
     <meta name="author" content="Neetesh Rathore">
 
-    <!-- Website Title -->
 
-    <title>
-        Neetesh Rathore | Full Stack Web Developer Portfolio
-    </title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="profile.jpg">
 
-    <!-- CSS File -->
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <!-- ==========================
-        HEADER START
-=========================== -->
+    <div class="progress-bar"></div>
 
-    <header>
+    <!-- Header -->
+    <header class="header">
 
-        <nav>
+        <nav class="navbar">
 
-            <h2>Neetesh Rathore</h2>
+            <a href="#home" class="logo">
 
-            <ul>
+                Neetesh <span>Rathore</span>
+
+            </a>
+
+            <!-- Navigation Menu -->
+            <ul id="primary-navigation" class="nav-menu" role="list">
 
                 <li>
-                    <a href="#home">Home</a>
+                    <a href="#home" class="nav-link active">
+                        Home
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#about" class="nav-link">
+                        About
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#skills">Skills</a>
+                    <a href="#skills" class="nav-link">
+                        Skills
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#education">Education</a>
+                    <a href="#education" class="nav-link">
+                        Education
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#projects" class="nav-link">
+                        Projects
+                    </a>
                 </li>
 
+                <li>
+                    <a href="#resume" class="nav-link">
+                        Resume
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#certificates" class="nav-link">
+                        Certificates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#achievements" class="nav-link">
+                        Achievements
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+                <!-- <button id="themeToggle" aria-label="Theme Toggle">
+                    <i class="fa-solid fa-moon"> 🌙</i>
+                </button>
+                
+  -->
+
+                <button class="menu-toggle" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </ul>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="primary-navigation">
+
+                <span></span>
+
+                <span></span>
+
+                <span></span>
+
+            </button>
 
         </nav>
 
-        <button id="themeToggle" class="theme-btn">
-            🌙
-        </button>
-
     </header>
-
-    <!-- ==========================
-        HEADER END
-=========================== -->
-
-    <!-- ==========================
-            MAIN START
-    =========================== -->
-
+    <!-- Main -->
     <main>
-        <!-- ==========================
-                HOME / HERO SECTION START
-        =========================== -->
-        <!-- 
-        <section id="home">
+        <!-- Hero -->
+        <section id="home" class="hero">
 
             <div class="hero-content">
 
-                <p>Hello, I'm</p>
-
-                <h1>Neetesh Rathore</h1>
-
-                <h2>Frontend Web Developer</h2>
-
-                <p>
-                    I am passionate about creating modern,
-                    responsive, and user-friendly websites
-                    using HTML, CSS, and JavaScript.
+                <p class="hero-greeting">
+                    👋 Hello, I'm
                 </p>
-                <a href="#contact">
-                    <button type="button">
-                        Hire Me
-                    </button>
-                </a>
 
-                <a href="resume.pdf" download>
-                    <button type="button">
-                        Download Resume
-                    </button>
-                </a>
+                <h1 class="hero-title">
 
-            </div>
+                    Neetesh <span>Rathore</span>
 
-            <div class="hero-image">
-
-                <img src="profile.jpg" alt="Neetesh Rathore Profile Picture">
-
-            </div>
-
-        </section> -->
-
-        <section id="home">
-
-            <div class="hero-content">
-
-                <h1>
-                    Hi, I'm <span>Neetesh Rathore</span>
                 </h1>
-                <h2 class="typing-text"> </h2>
 
-                <p>
-                    Passionate BTech student and aspiring Full Stack Web Developer dedicated to building modern,
-                    responsive and user-friendly web applications.
+                <h2 class="hero-role">
+
+                    Computer Science Engineering Student
+
+                </h2>
+
+                <p class="typing-text"></p>
+
+                <p class="hero-description">
+
+                    Passionate Web Developer dedicated to building modern,
+                    responsive and interactive web applications using HTML,
+                    CSS and JavaScript.
+
+                    Currently expanding my knowledge in React, Java,
+                    Data Structures & Algorithms and AI/ML while creating
+                    real-world projects and continuously improving my
+                    problem-solving skills.
+
                 </p>
+
+
 
                 <div class="hero-buttons">
 
-                    <a href="#contact" class="btn">
+                    <a href="#contact" class="btn" aria-label="Hire Me">
+
                         Hire Me
+
                     </a>
 
                     <a href="resume.pdf" class="btn btn-outline" download>
+
                         Download Resume
+
+                    </a>
+
+                </div>
+
+                <div class="hero-social">
+
+                    <a href="https://github.com/neetesh63" target="_blank" rel="noopener noreferrer">
+
+                        GitHub
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/neeteshrathore/" target="_blank" rel="noopener noreferrer">
+
+                        LinkedIn
+
+                    </a>
+
+                    <a href="https://www.instagram.com/neeteshrathore77/" target="_blank" rel="noopener noreferrer">
+
+                        Instagram
+
                     </a>
 
                 </div>
@@ -151,428 +208,1588 @@
 
             <div class="hero-image">
 
-                <img src="profile.jpg" alt="Neetesh Rathore">
+                <!-- <img src="profile.jpg" alt="Neetesh Rathore" loading="lazy" decoding="async"> -->
+
+                <img src="profile.jpg" alt="Portrait of Neetesh Rathore" loading="eager" decoding="async">
+
+            </div>
+
+        </section>
+        <!-- About -->
+        <section id="about" class="about">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+                    About Me
+                </span>
+
+                <h2 class="section-title">
+
+                    Passionate About Creating Modern Digital Experiences
+
+                </h2>
+
+                <p class="section-description">
+
+                    I am a Computer Science Engineering student with a strong passion
+                    for web development, problem solving and continuously learning new
+                    technologies.
+
+                </p>
+
+            </div>
+
+            <div class="about-container">
+
+                <div class="about-content">
+
+                    <h3>
+
+                        Hello, I'm Neetesh Rathore 👋
+
+                    </h3>
+
+                    <p>
+
+                        I am currently pursuing my Bachelor of Technology in
+                        Computer Science Engineering from Anand Engineering College,
+                        Agra.
+
+                    </p>
+
+                    <p>
+
+                        My journey in web development started with HTML and CSS.
+                        Since then, I have been continuously improving my skills by
+                        building responsive and interactive projects using modern
+                        web technologies.
+
+                    </p>
+
+                    <p>
+
+                        Currently, I am learning React, Java, Data Structures &
+                        Algorithms and Artificial Intelligence / Machine Learning
+                        to become a professional Full Stack Web Developer.
+
+                    </p>
+
+                    <p>
+
+                        I enjoy transforming ideas into clean, responsive and
+                        user-friendly web applications while writing organized,
+                        maintainable and scalable code.
+
+                    </p>
+
+                </div>
+
+                <div class="about-info">
+
+                    <div class="info-card">
+
+                        <h4>
+
+                            🎓 Education
+
+                        </h4>
+
+                        <p>
+
+                            B.Tech (Computer Science Engineering)
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h4>
+
+                            🏫 College
+
+                        </h4>
+
+                        <p>
+
+                            Anand Engineering College, Agra
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h4>
+
+                            📍 Location
+
+                        </h4>
+
+                        <p>
+
+                            Firozabad, Uttar Pradesh, India
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h4>
+
+                            💼 Career Goal
+
+                        </h4>
+
+                        <p>
+
+                            Full Stack Web Developer
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h4>
+
+                            🚀 Currently Learning
+
+                        </h4>
+
+                        <p>
+
+                            React, Java, DSA & AI/ML
+
+                        </p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h4>
+
+                            🌍 Languages
+
+                        </h4>
+
+                        <p>
+
+                            Hindi & English
+
+                        </p>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
 
-        <!-- ==========================
-                HOME / HERO SECTION END
-        =========================== -->
-        <!-- ==========================
-                ABOUT SECTION START
-        =========================== -->
+        <!-- Skills -->
+        <section id="skills" class="skills">
 
-        <section id="about">
+            <div class="section-header">
 
-            <h2>About Me</h2>
+                <span class="section-tag">
 
-            <p>
-                Hello! I'm <strong>Neetesh Rathore</strong>, a passionate
-                Frontend Web Developer from Firozabad, Uttar Pradesh.
-            </p>
+                    My Skills
 
-            <p>
-                I enjoy designing and developing responsive,
-                modern, and user-friendly websites using
-                HTML, CSS, and JavaScript.
-            </p>
+                </span>
 
-            <p>
-                I am continuously improving my development
-                skills by building real-world projects and
-                learning new technologies.
-            </p>
+                <h2 class="section-title">
 
-            <h3>Career Objective</h3>
+                    Technologies I Work With
 
-            <p>
-                My goal is to become a skilled Full Stack
-                Web Developer and contribute to impactful
-                software solutions while continuously
-                learning and growing in the IT industry.
-            </p>
+                </h2>
 
-        </section>
+                <p class="section-description">
 
-        <!-- ==========================
-                ABOUT SECTION END
-        =========================== -->
+                    I enjoy learning modern technologies and building projects
+                    that improve my development skills every day.
 
-        <!-- ==========================
-                SKILLS SECTION START
-        =========================== -->
-
-        <section id="skills">
-
-            <h2>My Skills</h2>
-
-            <p>
-                Here are some of the technologies and tools
-                that I am learning and using in web development.
-            </p>
-
-            
-                
-               <div class="skills-container">
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>HTML5</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" data-width="95%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>CSS3</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" data-width="90%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>JavaScript</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" data-width="80%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <div class="skill-info">
-                            <span>Git & GitHub</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" data-width="75%"></div>
-                        </div>
-                    </div>
-
-                </div>
-
-            
-
-        </section>
-
-        <!-- ==========================
-                SKILLS SECTION END
-        =========================== -->
-
-        <!-- ==========================
-                EDUCATION SECTION START
-        =========================== -->
-
-        <section id="education">
-
-            <h2>Education</h2>
-
-            <article>
-
-                <h3>Bachelor of Technology </h3>
-
-                <p>
-                    Anand Engineering Collage, Agra
                 </p>
-
-                <p>
-                    Currently Pursuing
-                </p>
-
-            </article>
-
-            <article>
-
-                <h3>Higher Secondary (Class 12)</h3>
-
-                <p>
-                    Uttar Pradesh Board
-                </p>
-
-                <p>
-                    Completed
-                </p>
-
-            </article>
-
-            <article>
-
-                <h3>High School (Class 10)</h3>
-
-                <p>
-                    Uttar Pradesh Board
-                </p>
-
-                <p>
-                    Completed
-                </p>
-
-            </article>
-
-        </section>
-
-        <!-- ==========================
-                EDUCATION SECTION END
-        =========================== -->
-
-        <!-- ==========================================
-             PROJECTS SECTION
-========================================== -->
-
-        <section id="projects">
-
-            <h2>My Projects</h2>
-
-            <p>
-                Here are some of the projects that showcase my skills in
-                web development and problem solving.
-            </p>
-
-            <div class="projects-container">
-
-                <!-- Project 1 -->
-
-                <article class="project-card">
-
-                    <img src="https://via.placeholder.com/500x300" alt="Portfolio Website">
-
-                    <h3>Personal Portfolio</h3>
-
-                    <p>
-                        A responsive portfolio website built using HTML, CSS and JavaScript.
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>HTML5</span>
-
-                        <span>CSS3</span>
-
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <div class="project-buttons">
-
-                        <a href="#" class="btn">
-                            Live Demo
-                        </a>
-
-                        <a href="#" class="btn btn-outline">
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </article>
-
-                <!-- Project 2 -->
-
-                <article class="project-card">
-
-                    <img src="https://via.placeholder.com/500x300" alt="Calculator">
-
-                    <h3>Calculator App</h3>
-
-                    <p>
-                        A simple calculator built using JavaScript with responsive design.
-                    </p>
-                    <div class="project-tech">
-
-                        <span>HTML5</span>
-
-                        <span>CSS3</span>
-
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <div class="project-buttons">
-
-                        <a href="#" class="btn">
-                            Live Demo
-                        </a>
-
-                        <a href="#" class="btn btn-outline">
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </article>
-
-                <!-- Project 3 -->
-
-                <article class="project-card">
-
-                    <img src="https://via.placeholder.com/500x300" alt="Landing Page">
-
-                    <h3>Responsive Landing Page</h3>
-
-                    <p>
-                        A modern landing page with responsive layout and clean UI.
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>HTML5</span>
-
-                        <span>CSS3</span>
-
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <div class="project-buttons">
-
-                        <a href="#" class="btn">
-                            Live Demo
-                        </a>
-
-                        <a href="#" class="btn btn-outline">
-                            GitHub
-                        </a>
-
-                    </div>
-
-                </article>
 
             </div>
 
-        </section>
+            <div class="skills-container">
 
-        <!-- ==========================================
-             RESUME SECTION
-========================================== -->
+                <div class="skill-card">
 
-        <section id="resume">
+                    <h3>
 
-            <h2>Resume</h2>
+                        Frontend
 
-            <p>
-                Download my latest resume to learn more about my education,
-                technical skills, and projects.
-            </p>
+                    </h3>
 
-            <div class="resume-container">
+                    <ul class="skill-list">
 
-                <div class="resume-card">
+                        <li>HTML5</li>
 
-                    <h3>My Resume</h3>
+                        <li>CSS3</li>
 
-                    <p>
-                        View or download my professional resume in PDF format.
-                    </p>
+                        <li>JavaScript</li>
 
-                    <a href="resume.pdf" class="btn" download>
-                        📄 Download Resume
-                    </a>
+                        <li>Responsive Design</li>
+
+                    </ul>
 
                 </div>
 
-                <div class="resume-card">
+                <div class="skill-card">
 
-                    <h3>Quick Overview</h3>
+                    <h3>
 
-                    <ul>
+                        Programming
 
-                        <li>🎓 B.Tech Student</li>
+                    </h3>
 
-                        <li>💻 Frontend Web Developer</li>
+                    <ul class="skill-list">
 
-                        <li>🌐 Responsive Web Design</li>
+                        <li>Java (Learning)</li>
 
-                        <li>🚀 Learning Full Stack Development</li>
+                        <li>Data Structures & Algorithms</li>
+
+                        <li>Problem Solving</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        Tools
+
+                    </h3>
+
+                    <ul class="skill-list">
+
+                        <li>Git</li>
+
+                        <li>GitHub</li>
+
+                        <li>VS Code</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="skill-card">
+
+                    <h3>
+
+                        Currently Learning
+
+                    </h3>
+
+                    <ul class="skill-list">
+
+                        <li>React</li>
+
+                        <li>AI / ML</li>
+
+                        <li>REST APIs</li>
+
+                        <li>Modern Web Development</li>
 
                     </ul>
 
                 </div>
 
             </div>
+        </section>
+        <!-- Education -->
+
+
+        <section id="education" class="education">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    Education
+
+                </span>
+
+                <h2 class="section-title">
+
+                    My Academic Journey
+
+                </h2>
+
+                <p class="section-description">
+
+                    My academic journey reflects continuous learning, perseverance,
+                    and a strong commitment to building technical skills alongside
+                    practical development experience.
+
+                </p>
+
+            </div>
+
+            <div class="education-container">
+
+                <article class="education-card">
+
+                    <span class="education-year">
+
+                        2023 – 2028 (Expected)
+
+                    </span>
+
+                    <h3>
+
+                        Bachelor of Technology (B.Tech)
+
+                    </h3>
+
+                    <h4>
+
+                        Computer Science Engineering
+
+                    </h4>
+
+                    <p class="education-college">
+
+                        Anand Engineering College, Agra
+
+                    </p>
+
+                    <p>
+
+                        Currently pursuing a Bachelor's degree in Computer Science
+                        Engineering while actively developing real-world web
+                        development projects and continuously enhancing my
+                        programming, problem-solving, and software development skills.
+
+                    </p>
+
+                </article>
+
+                <article class="education-card">
+
+                    <span class="education-year">
+
+                        2021 – 2023
+
+                    </span>
+
+                    <h3>
+
+                        Intermediate (Class XII)
+
+                    </h3>
+
+                    <h4>
+
+                        Science Stream
+
+                    </h4>
+
+                    <p class="education-college">
+
+                        S.R. Gyaneshwar Inter College,
+                        Suhag Nagar, Firozabad
+
+                    </p>
+
+                    <p>
+
+                        Successfully completed higher secondary education with a
+                        strong interest in technology, computers, and mathematics,
+                        which inspired me to pursue Computer Science Engineering.
+
+                    </p>
+
+                </article>
+
+                <article class="education-card">
+
+                    <span class="education-year">
+
+                        2019 – 2021
+
+                    </span>
+
+                    <h3>
+
+                        High School (Class X)
+
+                    </h3>
+
+                    <h4>
+
+                        Secondary Education
+
+                    </h4>
+
+                    <p class="education-college">
+
+                        Shri Kamal Singh Bhuri Devi Inter College,
+                        Alampur Kaneta, Firozabad
+
+                    </p>
+
+                    <p>
+
+                        Completed secondary education while building a strong
+                        academic foundation and developing curiosity for science,
+                        technology, and analytical thinking.
+
+                    </p>
+
+                </article>
+
+            </div>
 
         </section>
 
-        <!-- ==========================
-                CONTACT SECTION START
-        =========================== -->
+        <!-- My Journey -->
+        <section id="journey" class="journey">
 
-        <section id="contact">
+            <div class="section-header">
 
-            <h2>Contact Me</h2>
+                <span class="section-tag">
 
-            <p>
-                Feel free to contact me for internships,
-                freelance work or collaborations.
-            </p>
+                    My Journey
 
-            <form>
+                </span>
 
-                <label for="name">Full Name</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your full name"><br><br>
+                <h2 class="section-title">
 
-                <label for="email">Email Address</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+                    Every Challenge Made Me Stronger
 
-                <label for="message">Message</label><br>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea><br><br>
+                </h2>
 
-                <button type="submit">
-                    Send Message
-                </button>
+                <p class="section-description">
 
-            </form>
+                    My journey has been filled with learning, challenges,
+                    determination, and continuous self-improvement.
+
+                </p>
+
+            </div>
+
+            <div class="journey-container">
+
+                <article class="journey-card">
+
+                    <span class="journey-year">
+
+                        2023
+
+                    </span>
+
+                    <h3>
+
+                        Started My B.Tech Journey
+
+                    </h3>
+
+                    <p>
+
+                        Began my Bachelor of Technology in Computer Science
+                        Engineering with the dream of becoming a professional
+                        software developer.
+
+                    </p>
+
+                </article>
+
+                <article class="journey-card">
+
+                    <span class="journey-year">
+
+                        During B.Tech
+
+                    </span>
+
+                    <h3>
+
+                        Faced a Major Challenge
+
+                    </h3>
+
+                    <p>
+
+                        During my academic journey, I experienced a serious leg
+                        injury that required multiple surgeries and a long
+                        recovery period. Despite these challenges, I remained
+                        committed to my education and continued moving forward
+                        with determination.
+
+                    </p>
+
+                </article>
+
+                <article class="journey-card">
+
+                    <span class="journey-year">
+
+                        Recovery
+
+                    </span>
+
+                    <h3>
+
+                        Never Stopped Learning
+
+                    </h3>
+
+                    <p>
+
+                        While recovering, I focused on improving my technical
+                        knowledge, learning web development, and strengthening
+                        my problem-solving skills through continuous practice.
+
+                    </p>
+
+                </article>
+
+                <article class="journey-card">
+
+                    <span class="journey-year">
+
+                        Today
+
+                    </span>
+
+                    <h3>
+
+                        Building My Career
+
+                    </h3>
+
+                    <p>
+
+                        Today, I actively build responsive web applications,
+                        explore modern technologies, and continue learning React,
+                        Java, Data Structures & Algorithms, and AI/ML to become
+                        a skilled Full Stack Web Developer.
+
+                    </p>
+
+                </article>
+
+            </div>
 
         </section>
 
-        <!-- ==========================
-                CONTACT SECTION END
-        =========================== -->
+        <!-- Projects -->
+        <section id="projects" class="projects">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    My Projects
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Turning Ideas Into Real Projects
+
+                </h2>
+
+                <p class="section-description">
+
+                    These projects reflect my learning journey, practical experience,
+                    and passion for creating modern web applications.
+
+                </p>
+
+            </div>
+
+            <div class="projects-container">
+
+                <!-- Project 1 -->
+                <article class="project-card featured-project">
+
+                    <div class="project-image">
+
+                        <!-- <img src="project1.png" alt="Portfolio Website"> -->
+                        <img src="project1.png" alt="Portfolio Website Preview" loading="lazy">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-status">
+
+                            ✅ Completed
+
+                        </span>
+
+                        <h3>
+
+                            Personal Portfolio Website
+
+                        </h3>
+
+                        <p>
+
+                            A modern responsive portfolio showcasing my skills,
+                            projects, certifications, achievements and contact
+                            information with premium UI and interactive features.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML5</span>
+
+                            <span>CSS3</span>
+
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <a href="https://neetesh63.github.io/CodeAlpha_Portfolio/" target="_blank"
+                                rel="noopener noreferrer">
+
+                                Live Demo
+
+                            </a>
+
+                            <a href="https://github.com/neetesh63/CodeAlpha_Portfolio" target="_blank"
+                                rel="noopener noreferrer">
+
+                                GitHub
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <!-- <img src="project2.png" alt="Calculator"> -->
+                        <img src="project2.png" alt="Calculator Website Preview" loading="lazy">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-status">
+
+                            ✅ Completed
+
+                        </span>
+
+                        <h3>
+
+                            Modern Calculator
+
+                        </h3>
+
+                        <p>
+
+                            A responsive calculator with clean UI,
+                            keyboard support and smooth user experience.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML5</span>
+
+                            <span>CSS3</span>
+
+                            <span>JavaScript</span>
+
+                        </div>
+                        <div class="project-buttons">
+
+                            <a href="https://neetesh63.github.io/CodeAlpha_Calculator/" target="_blank"
+                                rel="noopener noreferrer">
+
+                                Live Demo
+
+                            </a>
+
+                            <a href="https://github.com/neetesh63/CodeAlpha_Calculator" target="_blank"
+                                rel="noopener noreferrer">
+
+                                GitHub
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <!-- <img src="project3.png" alt="Image Gallery"> -->
+                        <img src="project3.png" alt="Image Gallery Website Preview" loading="lazy">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-status">
+
+                            ✅ Completed
+
+                        </span>
+
+                        <h3>
+
+                            Interactive Image Gallery
+
+                        </h3>
+
+                        <p>
+
+                            A responsive image gallery featuring hover effects,
+                            filtering, lightbox preview and modern animations.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML5</span>
+
+                            <span>CSS3</span>
+
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <a href="https://neetesh63.github.io/CodeAlpha_ImageGallery/" target="_blank"
+                                rel="noopener noreferrer">
+
+                                Live Demo
+
+                            </a>
+
+                            <a href="https://github.com/neetesh63/CodeAlpha_ImageGallery" target="_blank"
+                                rel="noopener noreferrer">
+
+                                GitHub
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Resume -->
+        <section id="resume" class="resume">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    Resume
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Professional Resume
+
+                </h2>
+
+                <p class="section-description">
+
+                    A quick overview of my education, technical skills,
+                    certifications, projects and career objective.
+
+                </p>
+
+            </div>
+
+            <div class="resume-container">
+
+                <article class="resume-card">
+
+                    <div class="resume-icon">
+
+                        📄
+
+                    </div>
+
+                    <h3>
+
+                        Neetesh Rathore Resume
+
+                    </h3>
+
+                    <p>
+
+                        My resume highlights my academic journey,
+                        technical expertise, certifications,
+                        projects and continuous learning in
+                        Software Engineering and Artificial Intelligence.
+
+                    </p>
+
+                    <div class="resume-highlights">
+
+                        <span>B.Tech CSE</span>
+
+                        <span>Web Development</span>
+
+                        <span>Projects</span>
+
+                        <span>Certificates</span>
+
+                        <span>AI / ML</span>
+
+                        <span>Problem Solving</span>
+
+                    </div>
+
+                    <div class="resume-buttons">
+
+                        <a href="resume.pdf" target="_blank">
+
+                            View Resume
+
+                        </a>
+
+                        <!-- 
+                        <a href="resume.pdf" download> -->
+                        <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+
+                            Download Resume
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Certificates -->
+        <section id="certificates" class="certificates">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    Certificates
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Continuous Learning & Certifications
+
+                </h2>
+
+                <p class="section-description">
+
+                    I believe in continuous learning and regularly complete
+                    professional courses to improve my technical knowledge
+                    and practical skills.
+
+                </p>
+
+            </div>
+
+            <div class="certificates-container">
+
+                <article class="certificate-card">
+
+                    <div class="certificate-image">
+
+                        <img src="certificate1.jpg" alt="Google AI Essentials Certificate " loading="lazy">
+
+                    </div>
+
+                    <h3>
+
+                        Google AI Essentials
+
+                    </h3>
+
+                    <p>
+
+                        Issued by Google
+
+                    </p>
+
+                    <a href="certificate1.jpg" target="_blank" rel="noopener noreferrer">
+
+                        View Certificate
+
+                    </a>
+
+                </article>
+
+                <article class="certificate-card">
+
+                    <div class="certificate-image">
+                        <img src="certificate2.jpg" alt="Google Prompting Essentials Certificate" loading="lazy">
+
+                    </div>
+
+                    <h3>
+
+                        Google Prompting Essentials
+
+                    </h3>
+
+                    <p>
+
+                        Issued by Google
+
+                    </p>
+
+                    <a href="certificate2.jpg" target="_blank" rel="noopener noreferrer">
+
+                        View Certificate
+
+                    </a>
+
+                </article>
+
+                <article class="certificate-card">
+
+                    <div class="certificate-image">
+                        <img src="certificate3.jpg" alt="HTML Certificate" loading="lazy">
+                    </div>
+
+                    <h3>
+
+                        HTML Certification
+
+                    </h3>
+
+                    <p>
+
+                        KnowledgeGate
+
+                    </p>
+
+                    <a href="certificate3.jpg" target="_blank" rel="noopener noreferrer">
+
+                        View Certificate
+
+                    </a>
+
+                </article>
+
+                <article class="certificate-card">
+
+                    <div class="certificate-image">
+                        <img src="certificate4.jpg" alt="CSS Certificate" loading="lazy">
+                    </div>
+
+                    <h3>
+
+                        CSS Certification
+
+                    </h3>
+
+                    <p>
+
+                        KnowledgeGate
+
+                    </p>
+
+                    <a href="certificate4.jpg" target="_blank" rel="noopener noreferrer">
+
+                        View Certificate
+
+                    </a>
+
+                </article>
+
+                <article class="certificate-card">
+
+                    <div class="certificate-image">
+                        <img src="certificate5.jpg" alt=" Python Essentials 1 Certification" loading="lazy">
+                    </div>
+
+                    <h3>
+
+                        Python Essentials 1
+
+                    </h3>
+
+                    <p>
+
+                        Cisco Networking Academy
+
+                    </p>
+
+                    <a href="certificate5.jpg" target="_blank" rel="noopener noreferrer">
+
+                        View Certificate
+
+                    </a>
+
+                </article>
+
+                <article class="certificate-card">
+
+                    <div class="certificate-image">
+                        <img src="certificate6.jpg" alt="Python Essentials 2 Certification" loading="lazy">
+                    </div>
+
+                    <h3>
+
+                        Python Essentials 2
+
+                    </h3>
+
+                    <p>
+
+                        Cisco Networking Academy
+
+                    </p>
+
+                    <a href="certificate6.jpg" target="_blank" rel="noopener noreferrer">
+
+                        View Certificate
+
+                    </a>
+
+                </article>
+
+                <article class="certificate-card">
+
+                    <div class="certificate-image">
+                        <img src="certificate7.jpg" alt="Communication Skills Cartificate" loading="lazy">
+                    </div>
+
+                    <h3>
+
+                        Communication Skills
+
+                    </h3>
+
+                    <p>
+
+                        TCS iON
+
+                    </p>
+
+                    <a href="certificate7.jpg" target="_blank" rel="noopener noreferrer">
+
+                        View Certificate
+
+                    </a>
+
+                </article>
+
+                <article class="certificate-card">
+
+                    <div class="certificate-image">
+                        <img src="certificate8.jpg" alt="Learn Python Certification" loading="lazy">
+                    </div>
+
+                    <h3>
+
+                        Learn Python
+
+                    </h3>
+
+                    <p>
+
+                        Geekster
+
+                    </p>
+
+                    <a href="certificate8.jpg" target="_blank" rel="noopener noreferrer">
+
+                        View Certificate
+
+                    </a>
+
+                </article>
+
+                <article class="certificate-card">
+
+                    <div class="certificate-image">
+                        <img src="certificate9.jpg" alt="AWS Foundations of Prompt Engineering Certification"
+                            loading="lazy">
+                    </div>
+
+                    <h3>
+
+                        AWS Foundations of Prompt Engineering
+
+                    </h3>
+
+                    <p>
+
+                        Amazon Web Services
+
+                    </p>
+
+                    <a href="certificate9.jpg" target="_blank" rel="noopener noreferrer">
+
+                        View Certificate
+
+                    </a>
+
+                </article>
+
+                <article class="certificate-card">
+
+                    <div class="certificate-image">
+                        <img src="certificate10.jpg" alt=" AI Tools Workshop Certification" loading="lazy">
+                    </div>
+
+                    <h3>
+
+                        AI Tools Workshop
+
+                    </h3>
+
+                    <p>
+
+                        be10x
+
+                    </p>
+
+                    <a href="certificate10.jpg" target="_blank" rel="noopener noreferrer">
+
+                        View Certificate
+
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Achievements -->
+        <section id="achievements" class="achievements">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    Achievements
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Milestones & Accomplishments
+
+                </h2>
+
+                <p class="section-description">
+
+                    Every project, certification and learning milestone has helped me
+                    grow as a developer and prepared me for real-world challenges.
+
+                </p>
+
+            </div>
+
+            <div class="achievements-container">
+
+                <article class="achievement-card">
+
+                    <div class="achievement-icon">
+
+                        💼
+
+                    </div>
+
+                    <h3>
+
+                        Web Development Internship
+
+                    </h3>
+
+                    <p>
+
+                        Successfully completed multiple frontend development tasks
+                        while improving problem-solving and practical development
+                        skills.
+
+                    </p>
+
+                </article>
+
+                <article class="achievement-card">
+
+                    <div class="achievement-icon">
+
+                        🚀
+
+                    </div>
+
+                    <h3>
+
+                        Real-World Projects
+
+                    </h3>
+
+                    <p>
+
+                        Built responsive web applications including a Portfolio,
+                        Calculator and Image Gallery using HTML, CSS and JavaScript.
+
+                    </p>
+
+                </article>
+
+                <article class="achievement-card">
+
+                    <div class="achievement-icon">
+
+                        📚
+
+                    </div>
+
+                    <h3>
+
+                        Continuous Learning
+
+                    </h3>
+
+                    <p>
+
+                        Earned multiple certifications in Web Development,
+                        Artificial Intelligence, Python and Prompt Engineering.
+
+                    </p>
+
+                </article>
+
+                <article class="achievement-card">
+
+                    <div class="achievement-icon">
+
+                        🎯
+
+                    </div>
+
+                    <h3>
+
+                        Career Goal
+
+                    </h3>
+
+                    <p>
+
+                        Working towards becoming a Software Engineer and AI Engineer
+                        while continuously improving technical and problem-solving
+                        skills.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+
+                    Contact
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Let's Build Something Amazing Together
+
+                </h2>
+
+                <p class="section-description">
+
+                    Whether you have an opportunity, collaboration, or just want to
+                    connect, I'd be happy to hear from you.
+
+                </p>
+
+            </div>
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+
+                    <article class="contact-card">
+
+                        <h3>
+
+                            📧 Email
+
+                        </h3>
+
+                        <p>
+
+                            neetesh89540@gmail.com
+
+                        </p>
+
+                    </article>
+
+                    <article class="contact-card">
+
+                        <h3>
+
+                            📞 Phone
+
+                        </h3>
+
+                        <p>
+
+                            +91 6399203225
+
+                        </p>
+
+                    </article>
+
+                    <article class="contact-card">
+
+                        <h3>
+
+                            📍 Location
+
+                        </h3>
+
+                        <p>
+
+                            Firozabad, Uttar Pradesh, India
+
+                        </p>
+
+                    </article>
+
+                    <article class="contact-card">
+
+                        <h3>
+
+                            💼 Availability
+
+                        </h3>
+
+                        <p>
+
+                            Open for Internships, Freelance & Full-Time Opportunities
+
+                        </p>
+
+                    </article>
+
+                    <div class="contact-social">
+
+                        <a href="https://github.com/neetesh63" target="_blank" rel="noopener noreferrer">
+
+                            GitHub
+
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/neeteshrathore/" target="_blank" rel="noopener noreferrer">
+
+                            LinkedIn
+
+                        </a>
+
+                        <a href="https://www.instagram.com/neeteshrathore77/" target="_blank" rel="noopener noreferrer">
+
+                            Instagram
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <form id="contactForm" class="contact-form" novalidate>
+
+
+                    <label for="name" class="sr-only">
+
+                        Name
+
+                    </label>
+
+                    <input id="name" type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+
+                    <label for="email" class="sr-only">
+
+                        Email
+
+                    </label>
+
+                    <input id="email" type="email" name="email" placeholder="Your Email" autocomplete="email" required>
+
+                    <label for="subject" class="sr-only">
+
+                        Subject
+
+                    </label>
+
+                    <input id="subject" type="text" name="subject" placeholder="Subject" autocomplete="off" required>
+
+                    <label for="message" class="sr-only">
+
+                        Message
+
+                    </label>
+
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required>
+
+                    </textarea>
+
+                    <button type="submit">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
 
     </main>
 
-    <!-- ==========================
-            MAIN END
-    =========================== -->
+    <!-- Footer -->
+    <footer class="footer">
 
-    <!-- ==========================
-            FOOTER START
-    =========================== -->
-    <footer>
+        <div class="footer-container">
 
-        <h3>Neetesh Rathore</h3>
+            <div class="footer-brand">
 
-        <p>
-            Aspiring Full Stack Web Developer
-        </p>
+                <h2>
 
-        <p>
-            © 2026 All Rights Reserved.
-        </p>
+                    Neetesh <span>Rathore</span>
 
+                </h2>
+
+                <p>
+
+                    Aspiring Software Engineer & AI Engineer passionate about
+                    building modern, responsive and user-focused web applications
+                    while continuously learning new technologies.
+
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#skills">Skills</a></li>
+
+                    <li><a href="#projects">Projects</a></li>
+
+                    <li><a href="#certificates">Certificates</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-social">
+
+                <h3>
+
+                    Connect
+
+                </h3>
+
+                <a href="https://github.com/neetesh63" target="_blank" rel="noopener noreferrer">
+
+                    GitHub
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/neeteshrathore/" target="_blank" rel="noopener noreferrer">
+
+                    LinkedIn
+
+                </a>
+
+                <a href="https://www.instagram.com/neeteshrathore77/" target="_blank" rel="noopener noreferrer">
+
+                    Instagram
+
+                </a>
+
+                <a href="mailto:neetesh89540@gmail.com">
+
+                    Email
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © <span id="currentYear"></span> Neetesh Rathore.
+                All Rights Reserved.
+
+            </p>
+
+            <p>
+
+                Designed & Developed with ❤️ by Neetesh Rathore
+
+            </p>
+
+        </div>
 
     </footer>
-
-
-    <!-- ==========================
-            FOOTER END
-    =========================== -->
-
-    <!-- Scroll To Top Button -->
-
-    <button id="scrollTopBtn" title="Go to Top">
-
-        ↑
-
-    </button>
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
