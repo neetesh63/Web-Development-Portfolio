@@ -1387,7 +1387,7 @@ textarea:focus-visible {
 /* Header States */
 
 header.scrolled {
-    background: rgba(255, 255, 255, .82);
+    background: rgba(0, 0, 0, 0.82);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
     box-shadow: 0 8px 30px rgba(15, 23, 42, .08);
@@ -1504,10 +1504,27 @@ header.scrolled {
     .info-grid,
     .skills-container,
     .journey-container,
-    .projects-container,
     .certificates-container,
     .achievements-container {
         grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        /* Taki mobile par text center ho jaye (optional) */
+        gap: 1.5rem;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .project-buttons {
+        justify-content: center;
+        /* Mobile par buttons ko center karne ke liye */
     }
 
     .resume-buttons {
@@ -1535,33 +1552,6 @@ header.scrolled {
 
 }
 
-@media (max-width:480px) {
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.75rem;
-    }
-
-    p {
-        font-size: .95rem;
-    }
-
-    .hero-image img {
-        width: 260px;
-        height: 260px;
-    }
-
-    .project-card,
-    .certificate-card,
-    .achievement-card,
-    .contact-card {
-        border-radius: var(--radius-md);
-    }
-
-}
 
 @media (max-width:768px) {
 
@@ -1634,4 +1624,99 @@ header.scrolled {
         overflow: hidden;
     }
 
+    .project-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        /* Taki mobile par text center ho jaye (optional) */
+        gap: 1.5rem;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: .95rem;
+    }
+
+    .hero-image img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        /* Taki mobile par text center ho jaye (optional) */
+        gap: 1.5rem;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .project-buttons {
+        justify-content: center;
+        /* Mobile par buttons ko center karne ke liye */
+    }
+
+    .certificate-card,
+    .achievement-card,
+    .contact-card {
+        border-radius: var(--radius-md);
+    }
+
+}
+
+@media (max-width: 768px) {
+    /* 1. Projects ke main dabbe ko single column banane ke liye */
+    .projects-container {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* 2. Project Card ko Certificate jesa (Image upar, Text niche) banane ke liye */
+    .project-card {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 1.5rem !important;
+        gap: 1.5rem !important;
+    }
+
+    /* 3. Image ko screen ke hisaab se perfect fit karne ke liye */
+    .project-image {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .project-image img {
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+
+    /* 4. Text aur buttons ko center me lane ke liye */
+    .project-content {
+        text-align: center !important;
+        align-items: center !important;
+    }
+
+    .project-buttons {
+        justify-content: center !important;
+        width: 100% !important;
+    }
 }
